@@ -5,8 +5,7 @@ instance:
   #username: "{{ sn_username }}"
   #password: "{{ sn_password }}"
 group_by:
-  manufacturer:
   os:
     includes:
-      - Linux Red Hat
       - Windows XP
+ansible_host_source: name

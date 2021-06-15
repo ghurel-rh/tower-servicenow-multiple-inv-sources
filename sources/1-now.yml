@@ -5,8 +5,16 @@ instance:
   #username: "{{ sn_username }}"
   #password: "{{ sn_password }}"
 group_by:
-  manufacturer:
   os:
     includes:
       - Linux Red Hat
       - Windows XP
+columns:
+  - classification
+  - cpu_type    
+  - cpu_count
+  - os_version
+  - host_name
+  - os
+table: cmdb_ci_server 
+ansible_host_source: name
