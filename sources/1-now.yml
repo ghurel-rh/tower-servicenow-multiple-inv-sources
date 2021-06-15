@@ -16,5 +16,5 @@ columns:
   - os_version
   - host_name
   - os
-table: cmdb_ci_server 
+table: cmdb_rel_ci
 ansible_host_source: name
