@@ -1,6 +1,6 @@
 ---
 - name: Test inventory sources vars merging
-  hosts: localhost1
+  hosts: localhost
   tasks:
 
     - debug:
