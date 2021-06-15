@@ -1,0 +1,11 @@
+plugin: servicenow.itsm.now
+instance:
+  host: https://dev109340.service-now.com
+  username: admin
+  password: jjQFY7Aac2oE
+group_by:
+  manufacturer:
+  os:
+    includes:
+      - Linux Red Hat
+      - Windows XP
