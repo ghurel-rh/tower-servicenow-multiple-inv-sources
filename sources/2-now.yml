@@ -8,4 +8,5 @@ group_by:
   os:
     includes:
       - Windows XP
+table: cmdb_ci_network_adapter
 ansible_host_source: name
