@@ -1,0 +1,10 @@
+---
+- name: Test inventory sources vars merging
+  hosts: localhost1
+  tasks:
+
+    - debug:
+        var: "{{ sn_username }}"
+
+    - debug:
+        var: "{{ sn_password }}"
