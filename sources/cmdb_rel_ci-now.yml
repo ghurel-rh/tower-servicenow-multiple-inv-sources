@@ -7,30 +7,20 @@ plugin: servicenow.itsm.now
 #
 # Group hosts automatically, according to the values of the specified columns.
 group_by:
-  support_group:
-    includes:
-      - WAN.OPERATIONS
-      - LAN.OPERATIONS
-  class:
+  parent_class:
     includes:
       - IP Router
       - Firewall Hardware
       - IP Switch
       - Network Gear
-  install_status:
-    includes:
-      - Retired
-      - In maintenance
-      - In stock
-      - In transit
 # List of table columns to be included as hostvars.
-columns:
-  - classification
-  - os
-  - os_version
-  - hardware_os
-  - host_name
+#columns:
+#  - classification
+#  - os
+#  - os_version
+#  - hardware_os
+#  - host_name
 # Host variable to use as ansible_host when generating inventory hosts.
-ansible_host_source: name
+#ansible_host_source: name
 # The ServiceNow table to use as the inventory source.
 table: cmdb_rel_ci
