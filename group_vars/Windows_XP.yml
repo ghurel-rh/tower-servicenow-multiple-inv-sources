@@ -1,5 +1,0 @@
-ansible_become: yes
-ansible_become_method: enable
-ansible_network_os: arista.eos.eos
-ansible_user: my_eos_user
-ansible_password: my_eos_password
