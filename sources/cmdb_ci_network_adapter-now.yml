@@ -18,9 +18,9 @@ group_by:
       - In stock
       - In transit
 # List of table columns to be included as hostvars.
-columns:
-  - ip_address
+#columns:
+#  - ip_address
 # Host variable to use as ansible_host when generating inventory hosts.
-ansible_host_source: name
+#ansible_host_source: name
 # The ServiceNow table to use as the inventory source.
 table: cmdb_ci_network_adapter
