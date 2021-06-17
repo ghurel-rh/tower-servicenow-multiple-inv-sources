@@ -1,4 +1,4 @@
-plugin: servicenow.itsm.now
+#plugin: servicenow.itsm.now
 # not explicitly specified since injected as environment variables from Tower credentials
 # instance:
 #   host: https://dev109340.service-now.com
@@ -6,21 +6,21 @@ plugin: servicenow.itsm.now
 #   password: "{{ sn_password }}"
 #
 # Group hosts automatically, according to the values of the specified columns.
-group_by:
-  support_group:
-    includes:
-      - WAN.OPERATIONS
-      - LAN.OPERATIONS
-  install_status:
-    includes:
-      - Retired
-      - In maintenance
-      - In stock
-      - In transit
+#group_by:
+#  support_group:
+#    includes:
+#      - WAN.OPERATIONS
+#      - LAN.OPERATIONS
+#  install_status:
+#    includes:
+#      - Retired
+#      - In maintenance
+#      - In stock
+#      - In transit
 # List of table columns to be included as hostvars.
 #columns:
 #  - ip_address
 # Host variable to use as ansible_host when generating inventory hosts.
 #ansible_host_source: name
 # The ServiceNow table to use as the inventory source.
-table: cmdb_ci_network_adapter
+#table: cmdb_ci_network_adapter
