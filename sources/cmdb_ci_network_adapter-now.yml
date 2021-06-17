@@ -17,6 +17,7 @@
 #      - In maintenance
 #      - In stock
 #      - In transit
+#      - In use
 # List of table columns to be included as hostvars.
 #columns:
 #  - ip_address
